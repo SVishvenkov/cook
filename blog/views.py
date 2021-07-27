@@ -1,7 +1,6 @@
-from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView
 
-from blog.models import Post, Comment
+from .models import Post, Comment
 from .forms import CommentForm
 
 
@@ -26,7 +25,6 @@ class PostDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['form'] = CommentForm()
-
         return context
 
 
@@ -41,5 +39,3 @@ class CreateComment(CreateView):
 
     def get_success_url(self):
         return self.object.post.get_absolute_url()
-
-# Create your views here.
