@@ -47,9 +47,9 @@
                         commodo viverra<br /> maecenas accumsan lacus vel facilisis. </p>
                     <div class="footer__social">
                         {% get_social_links as social_links %}
-                            {% for item in social_links %}
+                        {% for item in social_links %}
                             <a href="{{ item.link }}"><img src="{{ item.icon.url }}"></a>
-                         {% endfor %}
+                        {% endfor %}
                     </div>
                 </div>
                 <div class="footer__copyright">

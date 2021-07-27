@@ -17,8 +17,8 @@ class CreateContact(CreateView):
     form_class = ContactForm
     success_url = '/'
 
+
 class AboutView(View):
     def get(self, request):
         about = About.objects.last()
         return render(request, 'contact/about.html', {"about": about})
-# Create your views here.
