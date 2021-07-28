@@ -20,4 +20,3 @@ class AboutAdmin(admin.ModelAdmin):
 
 admin.site.register(ContactLink)
 admin.site.register(Social)
-# Register your models here.

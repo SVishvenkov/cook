@@ -1,5 +1,6 @@
-{% load static social_tags %}
+{% load static social_tags cache %}
 
+{% cache 5000 footer %}
 <!-- Footer Section Begin -->
 <footer class="footer">
     <div class="container-fluid">
@@ -61,4 +62,5 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
     </div>
 </footer>
+{% endcache %}
 <!-- Footer Section End -->

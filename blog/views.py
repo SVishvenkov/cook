@@ -1,6 +1,9 @@
 from django.views.generic import ListView, DetailView, CreateView
 
 from .models import Post, Comment
+from django.views.generic import ListView, DetailView, CreateView
+
+from .models import Post, Comment
 from .forms import CommentForm
 
 
